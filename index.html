@@ -57,7 +57,8 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hello, My Name is Alejandro Soriano.</span>I am a systems engineering student, I look for new ways to learn
+            <p><span>Hello, My Name is Alejandro Soriano.</span>I am a systems engineering student, I look for new ways
+                to learn
                 and improve my knowledge. I like teamwork, I am always willing to help in any job in which some of my
                 colleagues need some help..</p>
 
@@ -232,7 +233,7 @@
                     <img src="img/p1.png" alt="">
                     <div class="overlay">
                         <h3>Encriptador de Texto</h3>
-                        <p>Un Encriptadorde Texto  basado en Html,Css Y Javascript</p>
+                        <p>Un Encriptadorde Texto basado en Html,Css Y Javascript</p>
                     </div>
                 </div>
                 <div class="proyecto">
@@ -281,22 +282,24 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                                <div class="input-container">
-                                    <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
-                                </div>
-                                <div class="input-container">
-                                    <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
-                                </div>
-                                <div class="input-container">
-                                    <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" pattern="\d{10}" required minlegth="10" maxlength="10" data-tipo="numero">
-                                </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"required pattern="[\s\S]{4,30}" data-tipo="texto"></textarea>
-                    <button class="Enviar">
-                        <a href="./formulario-concluido.html">
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span  class="overlay"></span></a>
-                    </button>
-                </div>
+                    <div class="input-container">
+                        <form>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="tema">Tema:</label>
+                            <input type="text" id="tema" name="tema" required>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                            <a href="./formulario-concluido.html">
+                            <button type="submit" onclick="submitForm()">Submit<i class="fa-solid fa-paper-plane"><span
+                                        class="overlay"></span></i></button></a>
+                                        
+                        </form>
+                    </div>
     </section>
 
     <!-- footer -->
@@ -315,7 +318,7 @@
         <h3 class="copyright"> &copy;Copyright Asheeアシー 2022</h3>
     </footer>
 
-    <script src="app.js" type="module"></script>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>
